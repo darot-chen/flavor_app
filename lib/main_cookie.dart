@@ -8,12 +8,9 @@ void main() {
 
   mainCommon(
     FlavorConfig()
-      ..appTitle = "Munchy Crunchy"
+      ..appTitle = "Cookie"
       ..imageLocation = "assets/images/munchy_crunchy.jpg"
-      ..apiEndpoint = {
-        Endpoints.items: "api.munchycrunchy.dev/items",
-        Endpoints.details: "api.munchycrunchy.dev/items",
-      }
+      ..baseUrl = "https://randomuser.me/api/"
       ..theme = ThemeData.dark(),
   );
 }

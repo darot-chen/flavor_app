@@ -8,17 +8,12 @@ void main() {
 
   mainCommon(
     FlavorConfig()
-      ..appTitle = "Beans Factory"
-      ..apiEndpoint = {
-        Endpoints.items: "random.api.dev/items",
-        Endpoints.details: "random.api.dev/item",
-      }
+      ..appTitle = "Coffee"
+      ..baseUrl = "https://randomuser.me/api/"
       ..imageLocation = "assets/images/coffee_bean.jpg"
       ..theme = ThemeData.light().copyWith(
         primaryColor: Color(0xFF123456),
-        appBarTheme: ThemeData.light().appBarTheme.copyWith(
-              backgroundColor: Color(0xFF654321),
-            ),
+        appBarTheme: ThemeData.light().appBarTheme.copyWith(backgroundColor: Color(0xFF654321)),
       ),
   );
 }
